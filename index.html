@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sube tu Hoja de Vida - Oportunidad Laboral</title>
+    <meta name="description" content="Únete a nuestro equipo. Sube tu hoja de vida y postúlate a las mejores vacantes.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <main class="main-container">
+
+        <header class="main-header">
+            <h1>Únete a la Revolución</h1>
+            <p>Donde el talento excepcional encuentra su lugar.</p>
+        </header>
+
+        <div class="split-layout">
+            <!-- Left Column: Vacancies -->
+            <section class="left-panel">
+                <h2>Explora Tu Próximo Reto</h2>
+                <div class="vacancy-cards">
+
+                    <!-- Ejecutivo Comercial -->
+                    <div class="vacancy-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop&crop=face"
+                                alt="Ejecutivo Comercial">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ejecutivo Comercial</h3>
+                            <p class="impact-text">¿Te apasiona conquistar clientes y superar metas? Aquí construirás
+                                relaciones de alto impacto, cerrarás negocios que transforman empresas y serás pieza
+                                clave en nuestro crecimiento. 🚀</p>
+
+                            <div class="expandable-content" id="details-comercial">
+                                <div class="details-section">
+                                    <h4>🎯 Funciones Principales</h4>
+                                    <ul class="job-functions">
+                                        <li>Buscar y contactar nuevos clientes empresariales</li>
+                                        <li>Presentar propuestas comerciales a medida</li>
+                                        <li>Negociar contratos y cerrar ventas</li>
+                                        <li>Mantener relaciones con clientes actuales</li>
+                                    </ul>
+                                    <h4>📋 Requisitos</h4>
+                                    <ul class="requirements">
+                                        <li>3+ años vendiendo a empresas</li>
+                                        <li>Buena comunicación y negociación</li>
+                                        <li>Te motivan las metas y resultados</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="toggle-details" data-target="details-comercial">Ver más ▼</button>
+                                <button class="apply-btn" onclick="openModal('Ejecutivo Comercial')">Aplicar →</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desarrollador Web -->
+                    <div class="vacancy-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=300&h=300&fit=crop"
+                                alt="Desarrollador Web">
+                        </div>
+                        <div class="card-content">
+                            <h3>Desarrollador Web</h3>
+                            <p class="impact-text">¿Sueñas con crear productos digitales que impacten a miles?
+                                Desarrollarás aplicaciones modernas, resolverás retos técnicos emocionantes y verás tu
+                                código en acción todos los días. 💻</p>
+
+                            <div class="expandable-content" id="details-dev">
+                                <div class="details-section">
+                                    <h4>🎯 Funciones Principales</h4>
+                                    <ul class="job-functions">
+                                        <li>Programar interfaces web con React, Vue o Angular</li>
+                                        <li>Conectar con servicios y bases de datos</li>
+                                        <li>Hacer que las páginas carguen rápido</li>
+                                        <li>Revisar código y apoyar al equipo junior</li>
+                                    </ul>
+                                    <h4>📋 Requisitos</h4>
+                                    <ul class="requirements">
+                                        <li>2+ años programando para web</li>
+                                        <li>Manejo de JavaScript/TypeScript</li>
+                                        <li>Uso de Git y trabajo en equipo</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="toggle-details" data-target="details-dev">Ver más ▼</button>
+                                <button class="apply-btn" onclick="openModal('Desarrollador Web')">Aplicar →</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analista de Datos -->
+                    <div class="vacancy-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=300&fit=crop"
+                                alt="Analista de Datos">
+                        </div>
+                        <div class="card-content">
+                            <h3>Analista de Datos</h3>
+                            <p class="impact-text">¿Te fascina descubrir patrones ocultos en los datos? Serás el
+                                detective que convierte información en estrategias ganadoras, influyendo directamente en
+                                las decisiones del negocio. 📊</p>
+
+                            <div class="expandable-content" id="details-data">
+                                <div class="details-section">
+                                    <h4>🎯 Funciones Principales</h4>
+                                    <ul class="job-functions">
+                                        <li>Crear reportes y dashboards en Power BI/Tableau</li>
+                                        <li>Analizar tendencias y patrones en los datos</li>
+                                        <li>Extraer información con consultas SQL</li>
+                                        <li>Presentar hallazgos a los jefes de área</li>
+                                    </ul>
+                                    <h4>📋 Requisitos</h4>
+                                    <ul class="requirements">
+                                        <li>Manejo de herramientas de reportes</li>
+                                        <li>SQL intermedio o avanzado</li>
+                                        <li>Atención al detalle y pensamiento lógico</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card-actions">
+                                <button class="toggle-details" data-target="details-data">Ver más ▼</button>
+                                <button class="apply-btn" onclick="openModal('Analista de Datos')">Aplicar →</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Right Column: Social Proof & Graph -->
+            <section class="right-panel">
+                <div class="glass-panel chart-panel">
+                    <h3>Crecimiento del Equipo</h3>
+                    <p class="subtitle">Talento que se ha unido este año</p>
+                    <div class="chart-container">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Enhanced Testimonial Carousel -->
+                <div class="testimonial-section">
+                    <div class="section-badge">✨ HISTORIAS DE ÉXITO</div>
+                    <div class="testimonial-carousel">
+                        <button class="carousel-btn prev-btn" id="prevTestimonial">❮</button>
+
+                        <div class="testimonial-track" id="testimonialTrack">
+                            <!-- Testimonial 1 -->
+                            <div class="testimonial-slide active">
+                                <div class="testimonial-card">
+                                    <div class="quote-icon">"</div>
+                                    <p class="quote">Entré hace un año como Junior y la cultura de crecimiento acelerado
+                                        me permitió liderar mi propio equipo hoy.</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+                                            alt="Ana" class="author-photo">
+                                        <div class="author-info">
+                                            <h4>Ana Martínez</h4>
+                                            <span class="role">Tech Lead</span>
+                                            <div class="growth-badge">📈 Junior → Lead en 12 meses</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="quote-icon">"</div>
+                                    <p class="quote">En 6 meses superé mis metas de ventas y ahora lidero el equipo
+                                        comercial de toda la región norte.</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                                            alt="Carlos" class="author-photo">
+                                        <div class="author-info">
+                                            <h4>Carlos Rodríguez</h4>
+                                            <span class="role">Gerente Comercial</span>
+                                            <div class="growth-badge">🏆 150% de meta cumplida</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="quote-icon">"</div>
+                                    <p class="quote">Pasé de analista a científica de datos. Aquí invertir en tu
+                                        desarrollo profesional es parte del ADN.</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face"
+                                            alt="María" class="author-photo">
+                                        <div class="author-info">
+                                            <h4>María López</h4>
+                                            <span class="role">Data Scientist</span>
+                                            <div class="growth-badge">🎓 Certificación pagada por la empresa</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 4 -->
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="quote-icon">"</div>
+                                    <p class="quote">La flexibilidad y el ambiente colaborativo me permitieron ganar un
+                                        premio internacional de diseño.</p>
+                                    <div class="testimonial-author">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                                            alt="Andrés" class="author-photo">
+                                        <div class="author-info">
+                                            <h4>Andrés Gómez</h4>
+                                            <span class="role">UX Designer</span>
+                                            <div class="growth-badge">🌟 Premio Awwwards 2024</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn next-btn" id="nextTestimonial">❯</button>
+                    </div>
+
+                    <div class="carousel-dots" id="carouselDots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Modal Form -->
+    <div id="applicationModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal" aria-label="Cerrar">×</button>
+
+            <header class="modal-header">
+                <h2 id="modalTitle">Aplica ahora</h2>
+                <p>Completa tus datos para iniciar el proceso.</p>
+            </header>
+
+            <form id="recruitmentForm">
+                <input type="hidden" id="jobRole" name="jobRole">
+
+                <div class="input-group">
+                    <label for="fullName">Nombre Completo</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="juan.perez@email.com" required>
+                </div>
+
+                <div class="row">
+                    <div class="input-group">
+                        <label for="phone1">Teléfono Principal</label>
+                        <input type="tel" id="phone1" name="phone1" placeholder="+57 300..." required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone2">Teléfono Alternativo</label>
+                        <input type="tel" id="phone2" name="phone2" placeholder="Opcional">
+                    </div>
+                </div>
+
+                <div class="file-upload-group">
+                    <label>Hoja de Vida (PDF)</label>
+                    <div class="file-drop-area" id="dropArea">
+                        <span class="file-icon">📄</span>
+                        <span class="file-text">Arrastra tu PDF aquí o haz clic</span>
+                        <input type="file" id="cvFile" name="cvFile" accept=".pdf" required>
+                    </div>
+                    <div id="filePreview" class="file-preview hidden">
+                        <span class="file-name" id="fileName">archivo.pdf</span>
+                        <button type="button" id="removeFile" class="remove-file-btn">✖</button>
+                    </div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                    <label for="privacyPolicy" class="checkbox-label">
+                        Acepto la <a href="#" class="link">política de tratamiento de datos</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="btn-text">Enviar Postulación</span>
+                    <div class="btn-loader hidden"></div>
+                </button>
+            </form>
+
+            <div id="successMessage" class="success-message hidden">
+                <div class="success-icon">✨</div>
+                <h2>¡Recibido!</h2>
+                <p>Tu perfil está siendo analizado por nuestra IA.</p>
+                <button id="closeSuccessBtn" class="submit-btn">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
